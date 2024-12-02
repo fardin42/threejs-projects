@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 100%;
+  position: relative;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+  font-size: 72px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+  height: 100vh;
+  width: 100%;
+
+  
+}
+.center{
+  align-items: center;
+  justify-content: center;
+}
+.row{
+display: flex;
+flex-direction: row;
+}
+.col{
+  display: flex;
+flex-direction: column;
+}
+nav{
+  height: 80%;
+  width: 100%;
+
+}
+nav ul{
+  width: 60%;
+  justify-content: space-between !important;
+  list-style: none;
+}
+
+nav ul li{
+
+  opacity: 0;
+
+
+
+}
+a{
+  display: flex;
+align-items: center;
+justify-content: center;
+
+  width: 250px;
+  padding: 3rem;
+  font-size: 1.5rem;
+  height: 250px;
+  border-radius: 50%;
+
+  text-decoration: none;
+  color: white;
+  transition: border-radius .5s ease ;
+  letter-spacing: 1px;
+
+/* background: -webkit-linear-gradient(to bottom top , #333399, #ff00cc);  Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top left,  #ff00cc,#333399 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+&:hover{
+ 
+  border-radius: 0;
+
+}
+
+}
+
+#cursor{
+  z-index: 10 ;
+  background-color: #ffffff80;
+}
+.hgroup{
+  height:190px;
+  overflow: hidden;
+  /* background: #fd0000; */
+  border-bottom: 2px solid  white ;
+}
